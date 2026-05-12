@@ -22496,5 +22496,48 @@ function descargarPdfEmbebidoNormativo(clave) {
 })();
 </script>
 
+<style id="ha-ipad10-fix-desde-hasta-2026-05-12">
+@media (min-width: 900px) and (max-width: 1180px) and (orientation: landscape) {
+  #master-filters .grid.grid-cols-2.md\:grid-cols-5.gap-4.flex-1.w-full {
+    display: grid !important;
+    grid-template-columns: minmax(130px,1fr) minmax(130px,1fr) minmax(150px,1fr) minmax(150px,1fr) auto !important;
+    gap: 10px !important;
+    align-items: end !important;
+  }
+  #master-filters .stagger-item {
+    min-width: 0 !important;
+  }
+  #master-filters .stagger-item > label {
+    display: block !important;
+    margin-bottom: 4px !important;
+    white-space: nowrap !important;
+  }
+  #master-filters input[type="date"],
+  #master-filters select {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  #master-filters .flex.flex-wrap.gap-2.items-end.justify-end.stagger-item.delay-500 {
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    min-width: 140px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  #master-filters .grid.grid-cols-2.md\:grid-cols-5.gap-4.flex-1.w-full {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+    gap: 10px !important;
+  }
+  #master-filters .flex.flex-wrap.gap-2.items-end.justify-end.stagger-item.delay-500 {
+    grid-column: 1 / -1 !important;
+    justify-content: flex-start !important;
+  }
+  #master-filters .stagger-item > label {
+    margin-bottom: 4px !important;
+  }
+}
+</style>
 </body>
 </html>
